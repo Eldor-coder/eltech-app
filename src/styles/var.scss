@@ -1,0 +1,32 @@
+$dark-blue : #2A5275;
+$black : #0E1821;
+$light-blue : #EDF2F6;
+$yellow : #FBB13C;
+$light-yellow : #FFF7E3;
+$green : #48A69B;
+$red : #D73838;
+$orange : #F37748;
+$white : #fff;
+$card-border : #EAEAF0;
+$grey : #838688;
+
+$instagram : linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+
+@mixin bg {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+@mixin fb($w) {
+    flex-basis: $w;
+    max-width: $w;
+    width: $w;
+}

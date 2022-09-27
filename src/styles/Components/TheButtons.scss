@@ -1,0 +1,17 @@
+@import '../var.scss';
+
+.slider {
+    height: 100px;
+    width: 700px;
+    border-radius: 9px;
+    overflow: hidden;
+    z-index: 1; 
+    &__box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+.slide{
+    height: 100px;
+}

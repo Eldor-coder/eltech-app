@@ -1,0 +1,120 @@
+@import '../var.scss';
+
+.category {
+    &__top {
+        margin-top: 10px;
+        .container {
+            position: relative;
+            display: flex;
+        }
+        &--catalogs {
+            position: absolute;
+            top: -1000px;
+            left: 0;
+            z-index: 1;
+            height: 420px;
+            width: 294px;
+            background-color: $light-blue;
+            padding: 8px 0px 8px 0px;
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+            transition: 0.8s;
+            &.active{
+                top: -10px;
+                left: 0;
+            }
+        }
+        &--list {
+            display: flex;
+            flex-direction: column; 
+            
+        }
+        &--link {
+            display: flex;
+            align-items: center;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 130%;
+            color: $black;
+            position: relative;
+            cursor: pointer;
+        }
+        &--item {
+            padding: 15px 18px;
+            
+            &:hover {
+                background-color: #DAE4ED;
+            }
+        }
+        &--triangle {
+            position: absolute;
+            // top: 0;
+            right: 0px;
+            width: 15px;
+            z-index: 3;
+            display: block;
+            transition: 0.5s;
+            &.active{
+                right: -25px;
+                display: block;
+            }
+        }
+        &--img {
+            width: 35px;
+            height: 35px;
+            margin-right: 10px;
+        }
+        
+    }
+    &__subcategory {
+        padding: 20px;
+        position: absolute;
+        top: 0;
+        left: 300px;
+        z-index: 2;
+        height: 400px;
+        background-color: $light-blue;
+        border-radius: 8px;
+        // overflow: hidden;
+        &__menu {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        &__item {
+            padding:10px;
+            width: 200px;
+            height: 55px;
+            display: flex;
+            align-items: center;
+            border-radius: 5px;
+            &:hover {
+                background-color: #DAE4ED;
+            }
+        }
+        &__link {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 130%;
+            color: $black;
+        }
+        &__img {
+            width: 40px;
+        }
+    }
+}
+
+@media(max-width:768px){ 
+    .category {
+        .col-sm-768 {
+            @include fb(unset);
+        }
+        .slider {
+            @include fb(100%);
+        }
+    }
+}
+

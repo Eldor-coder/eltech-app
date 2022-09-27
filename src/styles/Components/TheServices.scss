@@ -1,0 +1,62 @@
+@import '../var.scss';
+
+.service {
+    &__title {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 130%;
+        color: $black;
+        margin-bottom: 40px;
+        // margin-top: 60px;
+    }
+    &__btitle {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 120%;
+        color: $grey;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+    &__text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 130%;
+        color: $black;
+        margin-top: 20px;
+    }
+    &__subtitle {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 120%;
+        color: $black;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+    &__list {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 130%;
+        color: $black;
+        margin-left: 20px;
+        list-style-type: circle;
+    }
+    &__olist {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 130%;
+        color: $black;
+        margin-left: 20px;
+        list-style-type: decimal;
+    }
+    .bg__yellow {
+        background-color: yellow;
+    }
+   
+}
+.color__blue {
+    color: $dark-blue;
+}
+
+a {
+    color: $dark-blue;
+}

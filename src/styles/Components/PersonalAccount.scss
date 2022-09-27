@@ -1,0 +1,114 @@
+@import '../var.scss';
+
+.account {
+    color: $black;
+    position: relative;
+    .col-9 {
+        
+    }
+    &__box {
+        display: flex;
+        align-items: flex-start;
+        margin-top: 30px;
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 130%;
+    }
+    &__list {
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        border: 1px solid #EAEAF0;
+        border-radius: 8px;
+    }
+    &__item {
+        padding: 17.5px 20px;
+        width: 100%;
+        transition: .3s;
+        &.exit {
+            border-top: 1px solid #EAEAF0;
+        }
+        &:hover,&.active {
+            background: #EDF2F6;
+        }
+    }
+    &__router {
+        background: unset;
+        border: none;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        color: $black;
+        &.exit {
+            color: #F15152;
+        }
+
+    }
+}
+
+.modal {
+    color: $black;
+    position: fixed;
+    left: 0;
+    top: 0;
+    margin: auto;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(42, 82, 117, 0.6);
+    z-index: 4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0);
+    transition: .9s;
+    &.open {
+        transform: scale(1);
+    }
+}
+
+.exit {
+    &__modal {
+        position: absolute;
+        margin: 50px auto;
+        // top: 0;
+        // left: 0;
+        
+        // margin: 0 auto;
+        width: 400px;
+        height: 150px;
+        // border: 1px solid $dark-blue;
+        border-radius: 10px;
+        background: #fff;
+        padding: 20px;
+
+        &--title {
+            font-weight: 600;
+            font-size: 22px;
+            line-height: 130%;
+            color: #000;
+        }
+        &--btns {
+            display: flex;
+            align-items: center;
+            padding: 30px;
+            justify-content: space-around;
+        }
+        &--btn {
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 130%;
+            padding: 10px 20px;
+            transition: .3s;
+            // background-color: ;
+            &:hover {
+                background-color: $dark-blue;
+                color: #fff;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,98 @@
+@import '../var.scss';
+
+.news{
+    margin-bottom: 80px;
+    &__top {
+        display: flex;
+        align-items: baseline;
+        gap: 30px;
+        margin-bottom: 40px;
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 36px;
+        color: $black;
+        // line-height: 130%;
+    }
+    &__router {
+        display: flex;
+        align-items: baseline;
+        
+        img {
+            width: 13px;
+            height: 8px;
+        }
+    }
+    &__link {
+        font-weight: 500;
+        font-size: 16px;
+        // line-height: 120%;
+        color: $dark-blue;
+    }
+    &__bottom {
+        display: flex;
+        gap: 20px;
+        .row {
+            justify-content: space-between;
+        }
+    }
+    &__box {
+        width: 100%;
+        padding: 30px 50px;
+        background-color: $light-blue;
+        border-radius: 8px;
+        transition: 0.5s;
+        &:hover {
+            box-shadow:
+                6.7px 4px 11.6px rgba(0, 0, 0, 0.076),
+                15.2px 9.1px 24px rgba(0, 0, 0, 0.104),
+                50px 30px 80px rgba(0, 0, 0, 0.15)
+            ;
+        }
+        &--bottom{
+            display: flex;
+            justify-content: space-between;
+            &:first-child {
+                display: flex;
+                align-items: baseline;
+                gap: 5px;
+            }
+         }
+
+        &--router {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 120%;
+            color: $dark-blue;
+        }
+    }
+    &__btitle{
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 120%;
+        color: $black;
+        margin-bottom: 20px;
+        display: inline-block;
+        &:hover, &:active {
+            color: $dark-blue;
+        }
+    }
+    &__subtitle {
+        &--box {
+            height: 60px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 120%;
+        color: $black;
+        margin-bottom: 20px;
+    }
+    &__time {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 120%;
+        color: $grey;
+    }
+}

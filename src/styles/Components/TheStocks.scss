@@ -1,0 +1,43 @@
+@import '../var.scss';
+
+.stocks {
+    &__title {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 130%;
+        color: $black;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    &__box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: #EDF2F6;
+        border-radius: 8px;
+        padding: 11px 50px 11px 50px;
+        margin-bottom: 20px;
+        &:hover {
+            background: linear-gradient(90deg, #B0CFD0 98.67%, rgba(189, 215, 216, 0) 108.52%);
+        }
+    } 
+    &__text {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 120%;
+        color: $black;
+        &:hover, &:active {
+            color: #EDF2F6;
+        }
+    }
+    &__img {
+        width: 139px;
+        height: 158px; 
+    }
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

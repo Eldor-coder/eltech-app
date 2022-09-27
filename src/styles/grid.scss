@@ -1,0 +1,98 @@
+@import './var.scss';
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    z-index: 2;
+    // padding: 0px 15px;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.col-1 {
+    @include fb(8%);
+}
+
+.col-3 {
+    @include fb(25%);
+}
+
+.col-2 {
+    @include fb(15.67%);
+}
+
+.col-4 {
+    @include fb(32.33%);
+}
+
+.col-5 {
+    @include fb(41.667%);
+}
+
+.col-6 {
+    @include fb(49%);
+}
+
+.col-7 {
+    @include fb(58.33%);
+}
+
+.col-8 {
+    @include fb(65.67%);
+}
+
+.col-9 {
+    @include fb(75%);
+}
+
+.col-11 {
+    @include fb(91%);
+}
+
+.col-12 {
+    @include fb(100%);
+}
+
+@media(max-width:768px){
+
+    .col-sm-1 {
+        @include fb(8%);
+    }
+
+    .col-sm-3 {
+        @include fb(25%);
+    }
+
+    .col-sm-6 {
+        @include fb(49%);
+    }
+
+    .col-sm-9 {
+        @include fb(75%);
+    }
+
+    .col-sm-12 {
+        @include fb(100%);
+    }
+}
+
+@media(max-width:320px){
+
+    // .col-sm320-12 {
+    //     @include fb(100%);
+    // }
+}
